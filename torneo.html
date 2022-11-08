@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Riva Città Dei Canestri</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            font-family: 'Gemunu Libre', sans-serif;
+
+            font-family: 'Righteous', cursive;
+        }
+
+        .navbar {
+            background-color: orange;
+        }
+
+        li {
+            font-size: 1.1rem;
+        }
+
+        .nav-link.active {
+            background-color: orange;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        #cover {
+            background-image: url(media/palestra_pubblico.jpg);
+            background-size: cover;
+            background-position: 50%;
+            height: 80vh;
+
+        }
+
+        /*background-image: url(media/cover.jpg);            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+                                        <th scope="col">Miglior Giocatore</th>
+                            <th scope="col">Miglior Realizzatore</th>
+                            <th scope="col">Vincitore Gara di Tiro</th>
+            
+            
+            */
+
+        #hero {
+            background-color: rgba(0, 0, 0, 0.038);
+
+        }
+
+
+
+        .section {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        #section1 {}
+
+        hr.rounded {
+            border-top: 8px solid orange;
+            border-radius: 5px;
+        }
+
+        div.polaroid {
+            width: 80%;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 25px;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 15vw;
+            object-fit: cover;
+        }
+
+        .container .btn:hover {}
+
+        th {
+            font-size: 1.5rem;
+        }
+
+        #myTabContent {
+            border:solid 1px rgb(207, 207, 207)
+        }
+        .fa {
+            padding: 15px;
+            font-size: 10px;
+            width: 10px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+            box-sizing: unset;
+        }
+
+        footer .fa {
+            padding: 10px;
+            width: 10px;
+            font-size: 10px;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #ab147b;
+            background-image: linear-gradient(to bottom right, red, yellow);
+            color: white;
+        }
+
+        #myTab .nav-link.active {
+            background-color: orange;
+        }
+        
+        .org {
+            width: 60px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <!--NAV
+
+-->
+    <!--COVER-->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="media/logo-border.png" alt="Bootstrap" width="60" height="auto">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="torneo.html">Torneo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="strutture.html">Strutture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contatti.html">Info e Contatti</a>
+                    </li>
+                </ul>
+                <a href="https://facebook.com/RivaCittaDeiCanestri" class="fa fa-facebook" target="_blank"></a>
+                <a href="https://instagram.com/riva_citta_dei_canestri" class="fa fa-instagram" target="_blank"></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="section1" class="section">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-6 px-5">
+                    <h1 class="display-4">🏀 Il torneo</h1>
+                    <ul>
+                        <li>Riva Città Dei Canestri è aperto a quattro categorie in due differenti periodi</li><br>
+                        <li>La formula di ogni Torneo, prevede la certezza di 3 partite di qualificazione ed 1 di finale
+                            <br>
+                            (in base al numero delle squadre partecipanti, la formula delle qualificazioni può essere
+                            diversificata)</li><br>
+                        <li> Tutte le partite sono arbitrate da Arbitri Federali</li><br>
+                    </ul>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                    <div class="polaroid">
+                        <div id="galleryT" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#galleryT" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#galleryT" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#galleryT" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#galleryT" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                              <button type="button" data-bs-target="#galleryT" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                              <button type="button" data-bs-target="#galleryT" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="media/torneo1.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="media/torneo2.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="media/torneo3.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="media/torneo4.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="media/torneo5.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="media/torneo6.jpg" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#galleryT" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#galleryT" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+
+                <div class="col-lg-6 px-5">
+                    <h1 class="display-4">🏅 Premiazione</h1>
+                    <ul>
+                        <li>Tutte le squadre verranno premiate con: coppa, medaglia e maglietta celebrativa per tutti i
+                            partecipanti, gadget per lo Staff, premi individuali al miglior realizzatore, miglior
+                            giocatore e al vincitore della gara di tiro di ogni Torneo.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                    <div class="polaroid">
+                        <img src="media/premi.jpg" alt="Articolo" style="width:100%">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="container">
+        <hr class="rounded">
+    </div>
+    <h1 class="display-4 text-center my-5">Albo d'oro</h1>
+    <div class="container  col-xxl-8 px-4 pb-5">
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <div class="mx-auto d-flex">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">2021/2022</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                        type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">2019/2020</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                        type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">2018/2019</button>
+                </li>
+            </div>
+
+        </ul>
+        <div class="tab-content p-4" id="myTabContent">
+            <div class="tab-pane fade show active table-responsive" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">
+                <table class="table text-center mb-5">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">U17</th>
+                            <th scope="col">U15</th>
+                            <th scope="col">U14</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">🥇</th>
+                            <td>Pol. Giovanni Masi</td>
+                            <td>Tigers Milano</td>
+                            <td>Basket 90 Sassari</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">🥈</th>
+                            <td>Tigers Milano</td>
+                            <td>Team78 Martellago</td>
+                            <td>Junior Basket Rovereto</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">🥉</th>
+                            <td>Sangiorgese Basket</td>
+                            <td>Pall. Giovanili Robur Saronno</td>
+                            <td>Virtus AltoGarda</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3 class="text-center my-5 pt-3">Riconoscimenti individuali</h3>
+                <div class="row text-center">
+
+                    <div class="col-4">
+                        <h1>🏆</h1>
+                        <p>Miglior giocatore: <br><br>
+                            U17 - Garrini Mattia (Tigers Milano)<br>
+                            U15 - Pittana Davide (Verona Basket)<br>
+                            U14 - Solinas Mattia (Basket90)
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <h1>🏆</h1>
+                        <p>Miglior realizzatore: <br><br>
+                            U17 - Lagna Alessandro (Pol. Giovanni Masi) <br>
+                            U15 - Gasparoni Marco (Team78 Martellago) <br>
+                            U14 - Usai Giacomo (Basket90)
+                        
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <h1>🏆</h1>
+                        <p>Vincitore Gara di Tiro: <br> <br>
+                            U14 - Usai Giacomo (Basket90)
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab-pane fade table-responsive" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <table class="table text-center mb-5">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">U16</th>
+                            <th scope="col">U15</th>
+                            <th scope="col">U14</th>
+                            <th scope="col">U13</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">🥇</th>
+                            <td>Verona Basket</td>
+                            <td>Tigers Milano</td>
+                            <td>Tigers Milano (Arancio)</td>
+                            <td>Tigers Milano</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">🥈</th>
+                            <td>Fortitudo Pallacanestro Bologna 103 (Masi)</td>
+                            <td>Taurus Basket Jesi</td>
+                            <td>Verona Basket</td>
+                            <td>Verona Basket</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">🥉</th>
+                            <td>Pallacanestro e Pallavolo Reggiolo</td>
+                            <td>Excalsior Pall. Bergamo</td>
+                            <td>Sangiorgese Basket (Arancione)</td>
+                            <td>Valdisieve Basket</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3 class="text-center my-5 pt-3">Riconoscimenti individuali</h3>
+                <div class="row text-center">
+
+                    <div class="col-4">
+                        <h1>🏆</h1>
+                        <p>Miglior giocatore: <br><br>
+                            U16 - Soave Luca (Verona Basket)<br>
+                            U15 - BELLOMO Mattia (Tigers Milano)<br>
+                            U14 - Spiga Mattia (Verona Basket)<br>
+                            U13 - Zola Alessandro (Tigers Milano)
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <h1>🏆</h1>
+                        <p>Miglior realizzatore: <br><br>
+                            U16 - Ciscato Matteo (Pallacanestro Reggiolo)<br>
+                            U15 - Ferrari Andrea (Virtus Altogarda)<br>
+                            U14 - Romano Riccardo (Tigers Milano)<br>
+                            U13 - Tyron Alon (Tigers Milano)
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <h1>🏆</h1>
+                        <p>Vincitore Gara di Tiro: <br><br>
+                            U16 - Bartosz Zagnoni<br>
+                            U15 - Bellarosa Tommaso (Excelsior Bergamo)<br>
+                            U14 - Ferioli Matteo (Sangiorgese Basket)<br>
+                            U13 - Piccoli Daniele (Verona Basket)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade table-responsive" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                <table class="table text-center mb-5">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">U16</th>
+                            <th scope="col">U15</th>
+                            <th scope="col">U14</th>
+                            <th scope="col">U13</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">🥇</th>
+                            <td>Basket Village</td>
+                            <td>Verona Basket</td>
+                            <td>Verona Basket</td>
+                            <td>Sangiorgese Basket</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">🥈</th>
+                            <td>Terranuova Basket</td>
+                            <td>Aurora Desio</td>
+                            <td>Virtus Altogarda</td>
+                            <td>Verona Basket</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">🥉</th>
+                            <td>Pol. Giovanni Masi</td>
+                            <td>Virtus Altogarda</td>
+                            <td>Tigers Milano</td>
+                            <td>Virtus Isola della Scala</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3 class="text-center my-5 pt-3">Riconoscimenti individuali</h3>
+                <div class="row text-center">
+
+                    <div class="col-4">
+                        <h1>🏆</h1>
+                        <p>Miglior giocatore: <br><br>
+                            U16 - Basso Leonardo (Aurora Desio)<br>
+                            U15 - Gaye Tala (Virtus Altogarda)<br>
+                            U14 - Borciu Matteo (Verona Basket)<br>
+                            U13 - Modaferri Mattia (SANGIORGESE BASKET)
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <h1>🏆</h1>
+                        <p>Miglior realizzatore: <br><br>
+                            U16 - Ascani Tobia (Verona Basket)<br>
+                            U15 - Zuan Jacopo (Basket Pieve 94)<br>
+                            U14 - Madella Amedeo (Virtus Altogarda)<br>
+                            U13 - Boidi Lorenzo (Verona Basket)
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <h1>🏆</h1>
+                        <p>Vincitore Gara di Tiro: <br><br>
+                            U16 - Anesa Giulio (Pol. Giovanni Masi)<br>
+                            U15 - Mora Simone (Virtus Altogarda)<br>
+                            U14 - Poli Matteo (Etrusca Basket)<br>
+                            U13 - Bissoli Andrea (Virtus Isola della Scala)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab"
+                tabindex="0">...</div>
+        </div>
+
+    </div>
+
+    <!--CONTENT-->
+
+
+
+
+
+    <!--FOOTER-->
+    <footer class="footer mt-auto py-5 bg-dark">
+        <div class="container d-flex justify-content-between">
+            <span class="text-light align-self-center">Riva Città Dei Canestri</span>
+            <div class="ml-auto align-self-">
+                <img src="media/virtus_ag.png" alt="" class="org">
+                <img src="media/vb.png" alt="" class="org">
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
