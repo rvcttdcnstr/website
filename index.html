@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Riva Città Dei Canestri</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 'Gemunu Libre', sans-serif;
+
+            font-family: 'Righteous', cursive;
+        }
+
+        .navbar {
+            background-color: orange;
+        }
+
+        li {
+            font-size: 1.1rem;
+        }
+
+        .nav-link.active {
+            background-color: orange;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        #cover {
+            background-image: url(/media/palestra_pubblico_light.jpg);
+            height: 100vh;
+            background-size: cover;
+            
+        }
+
+        /*background-image: url(/media/cover.jpg);*/
+
+        #hero {
+            
+
+        }
+
+
+
+        #hero p span {
+            background-color: whitesmoke;
+            line-height: 1rem;
+            padding: 0.8rem;
+        }
+
+        #hero h1 span {
+            background-color: whitesmoke;
+            line-height: 1rem;
+            
+        }
+
+        .section {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        #section1 {}
+
+        hr.rounded {
+            border-top: 8px solid orange;
+            border-radius: 5px;
+        }
+
+        div.polaroid {
+            width: 80%;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 25px;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 20vw;
+            object-fit: cover;
+        }
+
+        .container .btn:hover {}
+
+        .fa {
+            padding: 15px;
+            font-size: 10px;
+            width: 10px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+            box-sizing: unset;
+        }
+
+        footer .fa {
+            padding: 10px;
+            width: 10px;
+            font-size: 10px;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #ab147b;
+            background-image: linear-gradient(to bottom right, red, yellow);
+            color: white;
+        }
+
+        .org {
+            width: 60px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <!--NAV-->
+
+    <!--COVER-->
+    <div id="cover" class="pb-3">
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="/media/logo-border.png" alt="Bootstrap" width="60" height="auto">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="torneo.html">Torneo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="strutture.html">Strutture</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contatti.html">Info e Contatti</a>
+                        </li>
+                    </ul>
+                    <a href="https://facebook.com/RivaCittaDeiCanestri" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://instagram.com/riva_citta_dei_canestri" class="fa fa-instagram" target="_blank"></a>
+                </div>
+            </div>
+        </nav>
+        <div id="hero" class="container col-xxl-8 px-4 py-5 mt-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-5 mx-auto">
+                    <img src="/media/logo-border.png" class="d-block mx-lg-auto img-fluid" alt="logo" width="700"
+                        height="500" loading="lazy">
+                </div>
+                <div class="col-lg-7 text-center">
+<!--                    <h1 class="display-2 fw-bold lh-1 mb-3"><span style="font-size: 50%; color:whitesmoke;">36°</span> <br> <span style="font-size: 120%; color:rgb(49, 195, 0);">Riva</span><br><span>Città Dei Canestri</span>
+                    </h1><br>
+                                    <p class="lead"><span>U14 e U15 dal 4-10 novembre</span><br><br><span>U14 e U15 dal 4-10 novembre</span></p>
+
+                -->
+                <h1 class="display-3 text-dark"><span>36°</span></h1>
+                <h1 class="display-5 text-dark"><span>RIVA CITTA DEI CANESTRI</span></h1><br>
+                <h1 class="display-1 text-dark"><span>U15 e U17</span></h1>
+                <h4 class="text-light">dal 26 al 29 DICEMBRE</h4>
+                <h1 class="display-1 text-dark"><span>U13 e U14</span></h1>
+                <h4 class="text-light">dal 2 al 5 GENNAIO</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--CONTENT-->
+    <div id="section1" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 px-5">
+                    <h1 class="display-4">La storia</h1><br>
+                    <p>Riva Città Dei Canestri nasce circa 30 anni fa dalla collaborazione tra Fabio Celebrano
+                        presidente di Verona Basket e Carlo Modena presidente di Virtus AltoGarda<br><br>
+                        Per molti anni il torneo si è chiamato “Torneo Città Di Riva” ed era riservato alle categorie
+                        U13 e U14<br>
+                        Il suggestivo paesaggio di Riva Del Garda, la disponibilità degli Hotel e gli ottimi impianti ci
+                        hanno spinto ad allargare il torneo anche alle categorie U15 e U17<br><br>
+                        Nasce così, nel 2017, Riva Città Dei Canestri, che in ogni Edizione ha visto sfidarsi circa 400
+                        ragazzi dal Centro e dal Nord Italia
+                    </p>
+
+                </div>
+                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                    <div class="polaroid">
+                        <img src="/media/articolo.jpg" alt="Articolo" style="width:100%">
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+    <div class="container">
+        <hr class="rounded">
+    </div>
+    <div id="section2">
+        <div class="container">
+            <div class="row my-5 justify-content-center">
+                <div class="col-lg-4 text-center mx-3">
+                    <h1 class="display-4">Il torneo</h1>
+                    <div class="card mx-auto mt-4">
+
+                        <a href="torneo.html">
+                            <img src="/media/palestra_pubblico_light.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <a href="torneo.html" class="btn btn-success">Info Torneo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center mx-3">
+                    <h1 class="display-4">Le strutture</h1>
+                    <div class="card mx-auto mt-4">
+
+                        <a href="strutture.html">
+                            <img src="/media/riva.jpg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <a href="torneo.html" class="btn btn-success">Info Strutture</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!--FOOTER-->
+    <footer class="footer mt-auto py-5 bg-dark">
+        <div class="container d-flex justify-content-between">
+            <span class="text-light align-self-center">Riva Città Dei Canestri</span>
+            <div class="ml-auto align-self-">
+                <img src="/media/virtus_ag.png" alt="" class="org">
+                <img src="/media/vb.png" alt="" class="org">
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
