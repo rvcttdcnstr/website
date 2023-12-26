@@ -146,7 +146,7 @@
     <!--COVER-->
     <nav class="navbar navbar-expand-lg bg-light fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index">
                 <img src="media/logo-border.png" alt="Bootstrap" width="60" height="auto">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
@@ -156,16 +156,16 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" aria-current="page" href="index">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="torneo.html">Torneo</a>
+                        <a class="nav-link active" href="torneo">Torneo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="strutture.html">Strutture</a>
+                        <a class="nav-link" href="strutture">Strutture</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contatti.html">Info e Contatti</a>
+                        <a class="nav-link" href="contatti">Info e Contatti</a>
                     </li>
                 </ul>
                 <a href="https://facebook.com/RivaCittaDeiCanestri" class="fa fa-facebook" target="_blank"></a>
@@ -186,7 +186,7 @@
                             <br>
                             (in base al numero delle squadre partecipanti, la formula delle qualificazioni può essere
                             diversificata)</li><br>
-                        <li> Tutte le partite sono arbitrate da Arbitri Federali</li><br>
+                        <li>Tutte le partite hanno tempo effettivo e sono dirette da Arbitri Federali</li><br>
                     </ul>
                 </div>
                 <div class="col-lg-6 d-flex align-items-center justify-content-center">
@@ -240,7 +240,7 @@
                     <h1 class="display-4">🏅 Premiazione</h1>
                     <ul>
                         <li>Tutte le squadre verranno premiate con: coppa, medaglia e maglietta celebrativa per tutti i
-                            partecipanti, gadget per lo Staff, premi individuali al miglior realizzatore, miglior
+                            partecipanti, ringraziamento per lo Staff, premi individuali al miglior realizzatore, miglior
                             giocatore e al vincitore della gara di tiro di ogni Torneo.</li>
                     </ul>
                 </div>
@@ -264,8 +264,12 @@
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <div class="mx-auto d-flex">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">2021/2022</button>
+                    <button class="nav-link active" id="last-tab" data-bs-toggle="tab" data-bs-target="#last-tab-pane"
+                        type="button" role="tab" aria-controls="last-tab-pane" aria-selected="true">2022/2023</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="false">2021/2022</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
@@ -279,7 +283,70 @@
 
         </ul>
         <div class="tab-content p-4" id="myTabContent">
-            <div class="tab-pane fade show active table-responsive" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+            <div class="tab-pane fade show active table-responsive" id="last-tab-pane" role="tabpanel" aria-labelledby="last-tab"
+            tabindex="0">
+            <table class="table text-center mb-5">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">U17</th>
+                        <th scope="col">U15</th>
+                        <th scope="col">U14</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">🥇</th>
+                        <td>Compagnia Dell’Albero Ravenna</td>
+                        <td>Basket90 Sassari</td>
+                        <td>Mens Sana Basketball Academy</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">🥈</th>
+                        <td>Basket90 Sassari</td>
+                        <td>Basketball Gallaratese</td>
+                        <td>Sangio Wolves Basket</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">🥉</th>
+                        <td>Basketball Gallaratese</td>
+                        <td>Polisportiva Masi</td>
+                        <td>Latina Basket</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="text-center my-5 pt-3">Riconoscimenti individuali</h3>
+            <div class="row text-center">
+
+                <div class="col-4">
+                    <h1>🏆</h1>
+                    <p>Miglior giocatore: <br><br>
+                        U17 - Catenelli (Compagnia Dell’Albero Ravenna)<br>
+                        U15 - Usai (Basket90 Sassari)<br>
+                        U14 - Pasini (Sangio Wolves Basket)
+                    </p>
+                </div>
+                <div class="col-4">
+                    <h1>🏆</h1>
+                    <p>Miglior realizzatore: <br><br>
+                        U17 - Peverotto (G.S. Basket Europa Bolzano)<br>
+                        U15 - Solinas (Basket90 Sassari)<br>
+                        U14 - Caccetta (Conte Verde Basket Rivoli)
+                    
+                    </p>
+                </div>
+                <div class="col-4">
+                    <h1>🏆</h1>
+                    <p>Vincitore Gara di Tiro: <br> <br>
+                        U17 - Catenelli (Compagnia Dell’Albero Ravenna)<br>
+                        U15 - Capruzzi (Polisportiva Masi) <br>
+                        U14 - Schiarante (Sangio Wolves Basket)
+                    </p>
+                </div>
+            </div>
+
+        </div>
+            <div class="tab-pane fade table-responsive" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
                 tabindex="0">
                 <table class="table text-center mb-5">
                     <thead>
